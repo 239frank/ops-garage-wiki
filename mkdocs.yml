@@ -1,0 +1,75 @@
+﻿site_name: The Ops Garage
+site_description: Cyber operations, home lab builds, automation, GRC, and technical lessons learned from the garage.
+site_url: https://ops.casadegarcia.tv
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: black
+      accent: blue
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - attr_list
+  - md_in_html
+
+nav:
+  - Start Here:
+      - Home: index.md
+      - About Me: start/about.md
+      - Current Focus: start/current-focus.md
+  - Portfolio:
+      - Portfolio Home: projects/index.md
+      - Incident Response Tracker: projects/ir-tracker.md
+      - GRC LLM: projects/grc-llm.md
+      - Security Onion Lab: projects/security-onion-lab.md
+      - n8n + Discord Automation: projects/n8n-discord-automation.md
+      - Public Exposure Watch: projects/public-exposure-watch.md
+      - Home Lab Operations: projects/home-lab-ops.md
+      - Domain Research Tools: projects/domain-tools.md
+      - Forza Tuning Calculator: projects/forza-tuning-calculator.md
+      - Audio Separation Lab: projects/audio-separation-lab.md
+      - Personal Wiki Build: projects/personal-wiki.md
+  - Cyber / GRC:
+      - Overview: cyber/index.md
+      - NIST 800-53 Notes: cyber/nist-800-53.md
+      - RMF / ATO Notes: cyber/rmf-ato.md
+      - CMMC Notes: cyber/cmmc.md
+  - Home Lab:
+      - Overview: homelab/index.md
+      - Unraid Server: homelab/unraid.md
+      - Network Diagram: homelab/network.md
+      - Docker Stack: homelab/docker.md
+      - Monitoring: homelab/monitoring.md
+      - Camera / Physical Security Lab: homelab/cameras-security.md
+  - Automation:
+      - Overview: automation/index.md
+      - n8n Workflows: automation/n8n.md
+      - Discord Bots: automation/discord-bots.md
+      - Alerting: automation/alerting.md
+  - Field Notes:
+      - Overview: notes/index.md
+      - Useful Commands: notes/useful-commands.md
+      - Troubleshooting Logs: notes/troubleshooting.md
+      - Screenshot Rules: notes/screenshot-rules.md
+  - Career:
+      - Overview: career/index.md
+      - Portfolio: career/portfolio.md
+      - Resume Work: career/resume-work.md
+      - Transition Notes: career/transition-notes.md
+      - Leadership Notes: career/leadership.md
