@@ -1,46 +1,71 @@
 ﻿# Public Exposure Watch
 
-## Purpose
+## Summary
 
-A lightweight external exposure check that helps identify whether public-facing services are unexpectedly reachable.
+Public Exposure Watch is an n8n workflow branch that checks DNS records, reverse proxy hosts, and Docker-published ports to identify potentially risky public-facing exposure in a home lab environment.
+
+The goal is not to replace a full vulnerability management platform. The goal is to catch obvious changes and reduce the chance of forgetting about something that became publicly reachable.
 
 ## Problem
 
-Self-hosted labs often grow over time. Subdomains, proxy hosts, ports, DNS records, and exposed services can become hard to track. A simple recurring check helps catch surprises.
+Self-hosted environments can grow quickly. Over time, it becomes easy to lose track of:
+
+- Which DNS records exist
+- Which reverse proxy hosts are configured
+- Which containers publish ports
+- Which services are reachable externally
+- Whether a new service changed the exposure baseline
+
+That creates risk because public exposure should be intentional, documented, and reviewed.
 
 ## Approach
 
-The workflow checks selected public endpoints and reports whether they appear reachable, blocked, redirected, or unexpected.
+The workflow builds a simple exposure review process:
 
-## Tools Used
-
-- n8n
-- HTTP request nodes
-- Discord alerts
-- Cloudflare DNS / proxy concepts
-- Reverse proxy awareness
-- Basic exposure review process
+1. Pull Cloudflare DNS records.
+2. Pull reverse proxy host data.
+3. Pull Docker-published port data.
+4. Normalize the results.
+5. Compare the current run against a stored baseline.
+6. Classify findings.
+7. Send a Discord report.
+8. Write metrics for later dashboarding.
 
 ## Screenshots
 
-Save screenshots here later:
+### Workflow Overview
 
-```text
-docs/assets/images/projects/public-exposure-watch/
-```
+![n8n workflow overview](../assets/images/projects/n8n-discord/workflow-overview.png)
 
-Example Markdown once screenshots are added:
+### Exposure Review Logic
 
-```md
-![Exposure watch alert](../assets/images/projects/public-exposure-watch/discord-alert.png)
-```
+![Public exposure function node](../assets/images/projects/n8n-discord/function-node.png)
+
+### Discord Alert
+
+![Discord public exposure alert](../assets/images/projects/n8n-discord/discord-alert.png)
+
+## What This Demonstrates
+
+- External exposure awareness
+- DNS and reverse proxy review
+- Docker port review
+- Baseline comparison logic
+- Operational alerting
+- Practical home lab security monitoring
+- Translating technical checks into readable reports
 
 ## Outcome
 
-This project demonstrates basic external attack surface awareness and practical automation.
+The workflow provides recurring visibility into public-facing exposure and makes it easier to notice unexpected changes.
 
 ## Lessons Learned
 
-- DNS, proxy, and firewall rules need periodic review.
-- A simple alert can prevent a forgotten exposure.
-- Public services should be intentional, documented, and monitored.
+- Public exposure should be intentional.
+- Baselines make recurring checks more useful.
+- A simple check that runs consistently is better than a perfect check that never gets finished.
+- Alert quality matters more than alert quantity.
+
+## Public Safety Note
+
+Screenshots on this page should be sanitized before publishing. Public IPs, private IPs, internal service names, webhook URLs, and media-related services should be blurred or removed.
