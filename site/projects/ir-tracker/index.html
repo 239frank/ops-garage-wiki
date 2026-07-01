@@ -663,10 +663,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Purpose
+        Summary
       
     </span>
   </a>
@@ -696,10 +696,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tools-used" class="md-nav__link">
+  <a href="#tools-and-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools Used
+        Tools and Concepts
       
     </span>
   </a>
@@ -707,10 +707,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
+  <a href="#what-this-demonstrates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Screenshots
+        What This Demonstrates
       
     </span>
   </a>
@@ -729,10 +729,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
+  <a href="#screenshot-opportunities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lessons Learned
+        Screenshot Opportunities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshot-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshot Folder
       
     </span>
   </a>
@@ -1869,7 +1880,7 @@
   <span class="md-ellipsis">
     
   
-    Resume Work
+    Resume Details
   
 
     
@@ -1973,10 +1984,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Purpose
+        Summary
       
     </span>
   </a>
@@ -2006,10 +2017,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tools-used" class="md-nav__link">
+  <a href="#tools-and-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools Used
+        Tools and Concepts
       
     </span>
   </a>
@@ -2017,10 +2028,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
+  <a href="#what-this-demonstrates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Screenshots
+        What This Demonstrates
       
     </span>
   </a>
@@ -2039,10 +2050,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
+  <a href="#screenshot-opportunities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lessons Learned
+        Screenshot Opportunities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshot-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshot Folder
       
     </span>
   </a>
@@ -2067,42 +2089,96 @@
 
 
 <h1 id="incident-response-tracker">Incident Response Tracker<a class="headerlink" href="#incident-response-tracker" title="Permanent link">&para;</a></h1>
-<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>A lightweight incident response tracker designed for SOC-style workflows.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>The Incident Response Tracker is a lightweight SOC-style case tracking concept designed to organize incidents, actions, status, notes, and follow-up work in one place.</p>
+<p>The project focuses on practical incident management rather than overbuilt tooling. The goal is to make response work easier to track, easier to hand off, and easier to review.</p>
 <h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
-<p>Incident response work can become scattered across chats, spreadsheets, tickets, and memory. Smaller teams need a simple way to track incidents, actions, status, ownership, notes, and follow-up tasks without overbuilding the process.</p>
-<h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
-<p>The goal is to keep the workflow simple:</p>
+<p>Incident response can become scattered quickly. Notes may live in chat, tickets, screenshots, spreadsheets, and memory. That creates problems during handoff, reporting, and follow-up.</p>
+<p>A useful incident tracker needs to answer simple operational questions:</p>
 <ul>
-<li>Open an incident</li>
-<li>Assign ownership</li>
-<li>Track status</li>
-<li>Capture actions taken</li>
-<li>Document artifacts and notes</li>
-<li>Close with lessons learned</li>
+<li>What happened?</li>
+<li>Who owns it?</li>
+<li>What is the current status?</li>
+<li>What actions were taken?</li>
+<li>What evidence exists?</li>
+<li>What still needs to happen?</li>
+<li>What did the team learn?</li>
 </ul>
-<h2 id="tools-used">Tools Used<a class="headerlink" href="#tools-used" title="Permanent link">&para;</a></h2>
+<h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
+<p>The tracker is designed around a simple incident lifecycle:</p>
+<ol>
+<li>Open the incident.</li>
+<li>Capture the initial summary.</li>
+<li>Assign ownership.</li>
+<li>Track status.</li>
+<li>Record actions and notes.</li>
+<li>Attach or reference evidence.</li>
+<li>Close the incident.</li>
+<li>Capture lessons learned.</li>
+</ol>
+<h2 id="tools-and-concepts">Tools and Concepts<a class="headerlink" href="#tools-and-concepts" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Web application prototype</li>
-<li>Docker / self-hosted deployment</li>
-<li>Unraid lab environment</li>
-<li>Incident response workflow design</li>
-<li>Future automation hooks</li>
+<li>SOC workflow design</li>
+<li>Incident response lifecycle</li>
+<li>Technician-focused case management</li>
+<li>Status tracking</li>
+<li>Action tracking</li>
+<li>Operational documentation</li>
+<li>Self-hosted lab deployment</li>
 </ul>
-<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h2>
-<p>Save screenshots here later:</p>
-<pre><code class="language-text">docs/assets/images/projects/ir-tracker/
-</code></pre>
-<p>Example Markdown once screenshots are added:</p>
-<pre><code class="language-md">![Incident dashboard](../assets/images/projects/ir-tracker/dashboard.png)
-</code></pre>
-<h2 id="outcome">Outcome<a class="headerlink" href="#outcome" title="Permanent link">&para;</a></h2>
-<p>The project creates a practical way to demonstrate incident response process thinking, lightweight tooling, and technician-friendly workflow design.</p>
-<h2 id="lessons-learned">Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permanent link">&para;</a></h2>
+<h2 id="what-this-demonstrates">What This Demonstrates<a class="headerlink" href="#what-this-demonstrates" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Keep the workflow simple enough that a technician would actually use it.</li>
-<li>Do not overbuild dashboards before the core incident process works.</li>
-<li>A useful MVP is better than a complicated tool nobody wants to maintain.</li>
+<li>Incident response process understanding</li>
+<li>SOC workflow awareness</li>
+<li>Technician-centered tool design</li>
+<li>Operational tracking discipline</li>
+<li>Ability to turn a workflow problem into a simple tool</li>
+<li>Understanding that response documentation matters during and after an event</li>
+</ul>
+<h2 id="outcome">Outcome<a class="headerlink" href="#outcome" title="Permanent link">&para;</a></h2>
+<p>This project demonstrates how I think about incident response: keep the workflow simple, capture the right information, support handoffs, and make the tool useful for the people doing the work.</p>
+<h2 id="screenshot-opportunities">Screenshot Opportunities<a class="headerlink" href="#screenshot-opportunities" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Screenshot</th>
+<th>What It Proves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Incident dashboard</td>
+<td>Shows overall workflow and queue visibility</td>
+</tr>
+<tr>
+<td>Incident detail page</td>
+<td>Shows case tracking and structured incident data</td>
+</tr>
+<tr>
+<td>Action tracker</td>
+<td>Shows response steps and ownership</td>
+</tr>
+<tr>
+<td>Status view</td>
+<td>Shows lifecycle management</td>
+</tr>
+<tr>
+<td>Notes/evidence section</td>
+<td>Shows documentation discipline</td>
+</tr>
+</tbody>
+</table>
+<h2 id="screenshot-folder">Screenshot Folder<a class="headerlink" href="#screenshot-folder" title="Permanent link">&para;</a></h2>
+<p>Save screenshots here:</p>
+<p><code>docs/assets/images/projects/ir-tracker/</code></p>
+<p>Recommended filenames:</p>
+<ul>
+<li><code>incident-dashboard.png</code></li>
+<li><code>incident-detail.png</code></li>
+<li><code>action-tracker.png</code></li>
+<li><code>status-view.png</code></li>
+<li><code>evidence-notes.png</code></li>
 </ul>
 
 

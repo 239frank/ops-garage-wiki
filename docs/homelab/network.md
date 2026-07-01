@@ -1,27 +1,35 @@
 ﻿# Network Diagram
 
-This page documents the logical layout of the home lab network.
+## Summary
 
-## Items to Document
+This page documents the logical network layout behind the home lab.
 
-- Router/firewall
-- Switches
-- Wireless access points
-- VLANs
-- Server IP ranges
-- Public services
-- Reverse proxy paths
-- DNS records
-- Security controls
+The goal is to understand how services connect, where traffic flows, what is exposed, and how monitoring fits into the environment.
 
-## Public Version Rule
+## Sanitized Network Topology
 
-For public screenshots or diagrams, blur or generalize:
+![Network overview](../assets/images/projects/homelab/network-overview.png)
 
-- Private IPs
+## Items Represented
+
+| Area | Examples |
+|---|---|
+| Edge/router | Internet gateway and routing boundary |
+| Switching | Core wired network and PoE switching |
+| Wireless | Access point and wireless clients |
+| Servers | Unraid and backup-style infrastructure |
+| Endpoints | Workstations, tablets, mobile devices, cameras, and IoT devices |
+| Monitoring | Visibility into connected infrastructure and device layout |
+
+## Public Diagram Rules
+
+For public diagrams, generalize or blur:
+
 - Public IPs
+- Private IPs
 - MAC addresses
-- Device serial numbers
-- Family names
-- Camera views
-- Internal-only hostnames
+- Serial numbers
+- Camera locations
+- Family device names
+- Sensitive hostnames
+- Any service that should not be advertised

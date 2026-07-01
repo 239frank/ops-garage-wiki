@@ -719,10 +719,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Purpose
+        Summary
       
     </span>
   </a>
@@ -752,10 +752,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tools-used" class="md-nav__link">
+  <a href="#tools-and-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools Used
+        Tools and Concepts
       
     </span>
   </a>
@@ -763,10 +763,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
+  <a href="#what-this-demonstrates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Screenshots
+        What This Demonstrates
       
     </span>
   </a>
@@ -785,10 +785,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
+  <a href="#screenshot-opportunities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lessons Learned
+        Screenshot Opportunities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshot-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshot Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-safety-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Safety Notes
       
     </span>
   </a>
@@ -1869,7 +1891,7 @@
   <span class="md-ellipsis">
     
   
-    Resume Work
+    Resume Details
   
 
     
@@ -1973,10 +1995,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Purpose
+        Summary
       
     </span>
   </a>
@@ -2006,10 +2028,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tools-used" class="md-nav__link">
+  <a href="#tools-and-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools Used
+        Tools and Concepts
       
     </span>
   </a>
@@ -2017,10 +2039,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
+  <a href="#what-this-demonstrates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Screenshots
+        What This Demonstrates
       
     </span>
   </a>
@@ -2039,10 +2061,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
+  <a href="#screenshot-opportunities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lessons Learned
+        Screenshot Opportunities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshot-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshot Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-safety-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Safety Notes
       
     </span>
   </a>
@@ -2067,44 +2111,90 @@
 
 
 <h1 id="security-onion-lab">Security Onion Lab<a class="headerlink" href="#security-onion-lab" title="Permanent link">&para;</a></h1>
-<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>A home lab security monitoring environment for learning network visibility, alerting, and SOC-style analysis.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>The Security Onion Lab is a home lab security monitoring environment used to practice network visibility, log review, alert triage, and SOC-style investigation workflows.</p>
+<p>The lab gives me a place to work with security telemetry, troubleshoot ingestion issues, and understand how alerts move from raw data to analyst review.</p>
 <h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
-<p>Cybersecurity theory is useful, but hands-on security monitoring requires real logs, real dashboards, real alerts, and real troubleshooting.</p>
+<p>Cybersecurity monitoring is difficult to understand from theory alone. Real skills come from seeing logs, alerts, dashboards, network traffic, failed ingestion, broken connectivity, and noisy events.</p>
+<p>A lab environment creates a safe place to learn and troubleshoot those problems.</p>
 <h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
-<p>The lab is designed to explore:</p>
-<ul>
-<li>Network security monitoring</li>
-<li>Log ingestion</li>
-<li>Detection workflows</li>
-<li>Alert triage</li>
-<li>Dashboard review</li>
-<li>Troubleshooting visibility issues</li>
-</ul>
-<h2 id="tools-used">Tools Used<a class="headerlink" href="#tools-used" title="Permanent link">&para;</a></h2>
+<p>The lab is designed around security visibility:</p>
+<ol>
+<li>Deploy the monitoring platform.</li>
+<li>Send logs or network telemetry into the platform.</li>
+<li>Review dashboards and alerts.</li>
+<li>Troubleshoot collection or connectivity issues.</li>
+<li>Document what worked and what failed.</li>
+<li>Use the lab to practice SOC-style review.</li>
+</ol>
+<h2 id="tools-and-concepts">Tools and Concepts<a class="headerlink" href="#tools-and-concepts" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Security Onion</li>
 <li>Syslog</li>
-<li>Network traffic sources</li>
-<li>Lab network devices</li>
 <li>Virtual machines</li>
-<li>Home lab infrastructure</li>
+<li>Network monitoring</li>
+<li>Alert review</li>
+<li>Log ingestion</li>
+<li>Dashboard analysis</li>
+<li>Firewall/routing troubleshooting</li>
+<li>SOC workflow concepts</li>
 </ul>
-<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h2>
-<p>Save screenshots here later:</p>
-<pre><code class="language-text">docs/assets/images/projects/security-onion/
-</code></pre>
-<p>Example Markdown once screenshots are added:</p>
-<pre><code class="language-md">![Security Onion dashboard](../assets/images/projects/security-onion/dashboard.png)
-</code></pre>
-<h2 id="outcome">Outcome<a class="headerlink" href="#outcome" title="Permanent link">&para;</a></h2>
-<p>This lab shows security monitoring skills, network troubleshooting, and the ability to build a functional SOC-style learning environment.</p>
-<h2 id="lessons-learned">Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permanent link">&para;</a></h2>
+<h2 id="what-this-demonstrates">What This Demonstrates<a class="headerlink" href="#what-this-demonstrates" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Visibility problems are often network, firewall, routing, or ingestion issues.</li>
-<li>Monitoring is only useful when alerts are understandable.</li>
-<li>A small lab can still teach real detection and triage habits.</li>
+<li>Security monitoring fundamentals</li>
+<li>Log ingestion awareness</li>
+<li>Alert triage practice</li>
+<li>Network troubleshooting</li>
+<li>SOC-style thinking</li>
+<li>Comfort working with imperfect lab environments</li>
+<li>Ability to document technical problems and fixes</li>
 </ul>
+<h2 id="outcome">Outcome<a class="headerlink" href="#outcome" title="Permanent link">&para;</a></h2>
+<p>This lab demonstrates hands-on security monitoring practice. It shows that I am not only studying cybersecurity concepts but building environments where those concepts can be tested and understood.</p>
+<h2 id="screenshot-opportunities">Screenshot Opportunities<a class="headerlink" href="#screenshot-opportunities" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Screenshot</th>
+<th>What It Proves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Security Onion dashboard</td>
+<td>Shows platform deployment</td>
+</tr>
+<tr>
+<td>Alerts/events view</td>
+<td>Shows monitoring and triage</td>
+</tr>
+<tr>
+<td>Log source or syslog configuration</td>
+<td>Shows ingestion setup</td>
+</tr>
+<tr>
+<td>Network diagram</td>
+<td>Shows monitoring architecture</td>
+</tr>
+<tr>
+<td>Troubleshooting notes</td>
+<td>Shows operational problem solving</td>
+</tr>
+</tbody>
+</table>
+<h2 id="screenshot-folder">Screenshot Folder<a class="headerlink" href="#screenshot-folder" title="Permanent link">&para;</a></h2>
+<p>Save screenshots here:</p>
+<p><code>docs/assets/images/projects/security-onion/</code></p>
+<p>Recommended filenames:</p>
+<ul>
+<li><code>dashboard.png</code></li>
+<li><code>alerts.png</code></li>
+<li><code>log-source.png</code></li>
+<li><code>network-architecture.png</code></li>
+<li><code>troubleshooting.png</code></li>
+</ul>
+<h2 id="public-safety-notes">Public Safety Notes<a class="headerlink" href="#public-safety-notes" title="Permanent link">&para;</a></h2>
+<p>Blur private IPs, hostnames, usernames, MAC addresses, internal device names, and any logs that could reveal sensitive personal or network details.</p>
 
 
 

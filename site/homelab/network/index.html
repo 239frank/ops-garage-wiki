@@ -1229,10 +1229,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#items-to-document" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Items to Document
+        Summary
       
     </span>
   </a>
@@ -1240,10 +1240,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-version-rule" class="md-nav__link">
+  <a href="#sanitized-network-topology" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Public Version Rule
+        Sanitized Network Topology
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#items-represented" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Items Represented
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-diagram-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Diagram Rules
       
     </span>
   </a>
@@ -1814,7 +1836,7 @@
   <span class="md-ellipsis">
     
   
-    Resume Work
+    Resume Details
   
 
     
@@ -1918,10 +1940,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#items-to-document" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Items to Document
+        Summary
       
     </span>
   </a>
@@ -1929,10 +1951,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#public-version-rule" class="md-nav__link">
+  <a href="#sanitized-network-topology" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Public Version Rule
+        Sanitized Network Topology
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#items-represented" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Items Represented
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-diagram-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Diagram Rules
       
     </span>
   </a>
@@ -1957,29 +2001,57 @@
 
 
 <h1 id="network-diagram">Network Diagram<a class="headerlink" href="#network-diagram" title="Permanent link">&para;</a></h1>
-<p>This page documents the logical layout of the home lab network.</p>
-<h2 id="items-to-document">Items to Document<a class="headerlink" href="#items-to-document" title="Permanent link">&para;</a></h2>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This page documents the logical network layout behind the home lab.</p>
+<p>The goal is to understand how services connect, where traffic flows, what is exposed, and how monitoring fits into the environment.</p>
+<h2 id="sanitized-network-topology">Sanitized Network Topology<a class="headerlink" href="#sanitized-network-topology" title="Permanent link">&para;</a></h2>
+<p><img alt="Network overview" src="../../assets/images/projects/homelab/network-overview.png" /></p>
+<h2 id="items-represented">Items Represented<a class="headerlink" href="#items-represented" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edge/router</td>
+<td>Internet gateway and routing boundary</td>
+</tr>
+<tr>
+<td>Switching</td>
+<td>Core wired network and PoE switching</td>
+</tr>
+<tr>
+<td>Wireless</td>
+<td>Access point and wireless clients</td>
+</tr>
+<tr>
+<td>Servers</td>
+<td>Unraid and backup-style infrastructure</td>
+</tr>
+<tr>
+<td>Endpoints</td>
+<td>Workstations, tablets, mobile devices, cameras, and IoT devices</td>
+</tr>
+<tr>
+<td>Monitoring</td>
+<td>Visibility into connected infrastructure and device layout</td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-diagram-rules">Public Diagram Rules<a class="headerlink" href="#public-diagram-rules" title="Permanent link">&para;</a></h2>
+<p>For public diagrams, generalize or blur:</p>
 <ul>
-<li>Router/firewall</li>
-<li>Switches</li>
-<li>Wireless access points</li>
-<li>VLANs</li>
-<li>Server IP ranges</li>
-<li>Public services</li>
-<li>Reverse proxy paths</li>
-<li>DNS records</li>
-<li>Security controls</li>
-</ul>
-<h2 id="public-version-rule">Public Version Rule<a class="headerlink" href="#public-version-rule" title="Permanent link">&para;</a></h2>
-<p>For public screenshots or diagrams, blur or generalize:</p>
-<ul>
-<li>Private IPs</li>
 <li>Public IPs</li>
+<li>Private IPs</li>
 <li>MAC addresses</li>
-<li>Device serial numbers</li>
-<li>Family names</li>
-<li>Camera views</li>
-<li>Internal-only hostnames</li>
+<li>Serial numbers</li>
+<li>Camera locations</li>
+<li>Family device names</li>
+<li>Sensitive hostnames</li>
+<li>Any service that should not be advertised</li>
 </ul>
 
 

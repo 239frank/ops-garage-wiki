@@ -1,52 +1,70 @@
 ﻿# Audio Separation Lab
 
-## Purpose
+## Summary
 
-A local audio processing lab for separating tracks and experimenting with music practice tools.
+The Audio Separation Lab is a local audio processing project focused on separating music tracks into usable stems for practice and experimentation.
+
+The project connects music, local tooling, self-hosting, and practical workflow design.
 
 ## Problem
 
-Musicians often need practice tracks, isolated parts, and flexible audio tools. Running these tools locally gives more control and avoids relying entirely on web services.
+Musicians often need isolated parts, practice tracks, and flexible ways to work with audio. Web services can help, but local tools provide more control over processing, storage, and workflow.
 
 ## Approach
 
-The lab explores local audio separation and practice workflows:
+The lab is designed around a simple musician-focused process:
 
-- Upload a track
-- Separate stems
-- Process locally
-- Use output for practice
-- Improve musician workflow
+1. Upload or select a track.
+2. Run local audio separation.
+3. Generate stems.
+4. Review the output.
+5. Use the result for practice or analysis.
+6. Keep the process repeatable.
 
-## Tools Used
+## Tools and Concepts
 
 - Python
 - Flask / FastAPI concepts
-- Audio separation tools
 - Docker
 - Unraid
+- Audio separation tools
+- Local processing
 - GPU-assisted processing concepts
+- Music practice workflow design
 
-## Screenshots
+## What This Demonstrates
 
-Save screenshots here later:
-
-```text
-docs/assets/images/projects/audio-lab/
-```
-
-Example Markdown once screenshots are added:
-
-```md
-![Audio separation interface](../assets/images/projects/audio-lab/interface.png)
-```
+- Local application deployment
+- Audio workflow design
+- Self-hosted processing
+- Practical Python tooling
+- Creative technical problem solving
+- Connecting personal interests with technical builds
 
 ## Outcome
 
-This project demonstrates local AI/audio tooling, self-hosting, and practical workflow design for music practice.
+This project demonstrates the ability to build useful local tools around a real workflow instead of relying only on third-party services.
 
-## Lessons Learned
+## Screenshot Opportunities
 
-- Local processing gives control but requires more setup.
-- Good UI matters when a tool is used repeatedly.
-- Creative projects still benefit from clean engineering notes.
+| Screenshot | What It Proves |
+|---|---|
+| Upload/interface page | Shows user workflow |
+| Processing status | Shows application behavior |
+| Output stems/files | Shows useful result |
+| Container view | Shows deployment |
+| Practice workflow example | Shows real-world use |
+
+## Screenshot Folder
+
+Save screenshots here:
+
+`docs/assets/images/projects/audio-lab/`
+
+Recommended filenames:
+
+- `interface.png`
+- `processing-status.png`
+- `output-stems.png`
+- `container-view.png`
+- `practice-workflow.png`

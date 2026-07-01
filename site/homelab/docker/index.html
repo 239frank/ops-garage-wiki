@@ -1257,10 +1257,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#container-inventory-template" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Container Inventory Template
+        Summary
       
     </span>
   </a>
@@ -1268,10 +1268,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rebuild-notes" class="md-nav__link">
+  <a href="#container-operations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Rebuild Notes
+        Container Operations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-inventory-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Inventory Format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-good-documentation-captures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Good Documentation Captures
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#professional-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Professional Value
       
     </span>
   </a>
@@ -1814,7 +1847,7 @@
   <span class="md-ellipsis">
     
   
-    Resume Work
+    Resume Details
   
 
     
@@ -1918,10 +1951,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#container-inventory-template" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Container Inventory Template
+        Summary
       
     </span>
   </a>
@@ -1929,10 +1962,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rebuild-notes" class="md-nav__link">
+  <a href="#container-operations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Rebuild Notes
+        Container Operations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-inventory-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Inventory Format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-good-documentation-captures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Good Documentation Captures
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#professional-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Professional Value
       
     </span>
   </a>
@@ -1957,39 +2023,55 @@
 
 
 <h1 id="docker-stack">Docker Stack<a class="headerlink" href="#docker-stack" title="Permanent link">&para;</a></h1>
-<p>This page tracks containers, ports, purposes, and rebuild notes.</p>
-<h2 id="container-inventory-template">Container Inventory Template<a class="headerlink" href="#container-inventory-template" title="Permanent link">&para;</a></h2>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This page tracks containerized services, ports, purposes, and rebuild notes.</p>
+<p>Docker is one of the main ways the lab supports repeatable services and project work.</p>
+<h2 id="container-operations">Container Operations<a class="headerlink" href="#container-operations" title="Permanent link">&para;</a></h2>
+<p><img alt="Docker container list" src="../../assets/images/projects/homelab/docker-containers.png" /></p>
+<h2 id="container-inventory-format">Container Inventory Format<a class="headerlink" href="#container-inventory-format" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Container</th>
+<th>Container Type</th>
 <th>Purpose</th>
-<th style="text-align: right;">Port</th>
-<th>Storage Path</th>
-<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Example</td>
-<td>Example service</td>
-<td style="text-align: right;">1234</td>
-<td><code>/mnt/user/appdata/example</code></td>
-<td>Notes</td>
+<td>Automation</td>
+<td>Runs scheduled workflows and notifications</td>
+</tr>
+<tr>
+<td>Monitoring</td>
+<td>Supports dashboards, metrics, and visibility</td>
+</tr>
+<tr>
+<td>Security / GRC</td>
+<td>Supports security labs and compliance experiments</td>
+</tr>
+<tr>
+<td>Infrastructure</td>
+<td>Supports reverse proxy, databases, and supporting services</td>
+</tr>
+<tr>
+<td>Development</td>
+<td>Hosts prototypes, tools, and project applications</td>
 </tr>
 </tbody>
 </table>
-<h2 id="rebuild-notes">Rebuild Notes<a class="headerlink" href="#rebuild-notes" title="Permanent link">&para;</a></h2>
-<p>Document anything needed to rebuild the service:</p>
-<ul>
-<li>Environment variables</li>
-<li>Ports</li>
-<li>Volumes</li>
-<li>GPU requirements</li>
-<li>Network mode</li>
-<li>Backup location</li>
-<li>Known issues</li>
-</ul>
+<h2 id="what-good-documentation-captures">What Good Documentation Captures<a class="headerlink" href="#what-good-documentation-captures" title="Permanent link">&para;</a></h2>
+<p>For each important container, document:</p>
+<ol>
+<li>What the container does.</li>
+<li>Which ports it uses.</li>
+<li>Where appdata is stored.</li>
+<li>What credentials or secrets exist outside screenshots.</li>
+<li>How to restart or rebuild it.</li>
+<li>What breaks most often.</li>
+<li>What logs matter.</li>
+</ol>
+<h2 id="professional-value">Professional Value<a class="headerlink" href="#professional-value" title="Permanent link">&para;</a></h2>
+<p>Container documentation shows operational maturity. It proves that the environment is not just running by accident; it can be understood, maintained, and rebuilt.</p>
 
 
 

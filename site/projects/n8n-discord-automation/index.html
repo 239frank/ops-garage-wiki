@@ -747,10 +747,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Purpose
+        Summary
       
     </span>
   </a>
@@ -791,10 +791,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
+  <a href="#workflow-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Screenshots
+        Workflow Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-exposure-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Exposure Logic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execution History
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discord-alert-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discord Alert Output
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-demonstrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What This Demonstrates
       
     </span>
   </a>
@@ -1869,7 +1913,7 @@
   <span class="md-ellipsis">
     
   
-    Resume Work
+    Resume Details
   
 
     
@@ -1973,10 +2017,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Purpose
+        Summary
       
     </span>
   </a>
@@ -2017,10 +2061,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
+  <a href="#workflow-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Screenshots
+        Workflow Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-exposure-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Exposure Logic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execution History
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discord-alert-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discord Alert Output
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-demonstrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What This Demonstrates
       
     </span>
   </a>
@@ -2067,45 +2155,75 @@
 
 
 <h1 id="n8n-discord-automation">n8n + Discord Automation<a class="headerlink" href="#n8n-discord-automation" title="Permanent link">&para;</a></h1>
-<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>A workflow automation system that uses n8n to collect useful data and send clean notifications to Discord.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This project uses <strong>n8n</strong> as a workflow automation engine and <strong>Discord</strong> as a notification layer for home lab operations, network visibility, and recurring status checks.</p>
+<p>The workflow collects data from multiple sources, normalizes it, checks for meaningful changes, sends reports to Discord, and writes selected metrics for dashboarding.</p>
 <h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
-<p>A lot of home lab and personal ops work involves checking the same things repeatedly: server status, deal alerts, newly added media, exposure checks, and workflow results. Manual checking wastes time.</p>
-<h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
-<p>Use n8n as the workflow engine and Discord as the notification layer.</p>
-<p>Examples:</p>
+<p>A growing home lab creates a lot of things to check manually:</p>
 <ul>
-<li>Scheduled checks</li>
-<li>API pulls</li>
-<li>Filtering and scoring</li>
-<li>Normalized output</li>
-<li>Discord channel alerts</li>
-<li>Separate channels for different alert types</li>
+<li>Are important services still running?</li>
+<li>Are any public-facing services unexpectedly exposed?</li>
+<li>Did DNS or reverse proxy records change?</li>
+<li>Are containers publishing ports that need review?</li>
+<li>Can useful status reports be delivered without logging into every tool?</li>
 </ul>
+<p>Manual checks work for a small setup, but they do not scale well. This workflow creates a lightweight automation pipeline that checks the environment on a schedule and sends readable outputs to the right Discord channels.</p>
+<h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
+<p>The workflow uses scheduled execution and multiple data sources to build a practical network operations report.</p>
+<p>At a high level, the workflow:</p>
+<ol>
+<li>Runs on a schedule.</li>
+<li>Pulls device, client, and network data.</li>
+<li>Queries DNS and reverse proxy information.</li>
+<li>Checks Docker/container port exposure.</li>
+<li>Builds network inventory output.</li>
+<li>Reviews public exposure conditions.</li>
+<li>Sends Discord notifications.</li>
+<li>Writes selected metrics for dashboarding.</li>
+</ol>
 <h2 id="tools-used">Tools Used<a class="headerlink" href="#tools-used" title="Permanent link">&para;</a></h2>
 <ul>
 <li>n8n</li>
 <li>Discord webhooks</li>
 <li>JavaScript function nodes</li>
-<li>Scheduled triggers</li>
-<li>Docker / Unraid</li>
-<li>API integrations</li>
+<li>Cloudflare DNS data</li>
+<li>Reverse proxy data</li>
+<li>Docker/container data</li>
+<li>Unraid home lab environment</li>
+<li>Metrics output for dashboarding</li>
 </ul>
-<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h2>
-<p>Save screenshots here later:</p>
-<pre><code class="language-text">docs/assets/images/projects/n8n-discord/
-</code></pre>
-<p>Example Markdown once screenshots are added:</p>
-<pre><code class="language-md">![n8n workflow](../assets/images/projects/n8n-discord/workflow.png)
-</code></pre>
+<h2 id="workflow-overview">Workflow Overview<a class="headerlink" href="#workflow-overview" title="Permanent link">&para;</a></h2>
+<p>The full workflow connects scheduled checks, network inventory, exposure review, Discord reporting, and metric output.</p>
+<p><img alt="n8n workflow overview" src="../../assets/images/projects/n8n-discord/workflow-overview.png" /></p>
+<h2 id="public-exposure-logic">Public Exposure Logic<a class="headerlink" href="#public-exposure-logic" title="Permanent link">&para;</a></h2>
+<p>The workflow includes a JavaScript function node that normalizes DNS records, reverse proxy hosts, and Docker-published ports. It compares observed data against a stored baseline so that new exposure-related changes can be surfaced.</p>
+<p><img alt="Public exposure function node" src="../../assets/images/projects/n8n-discord/function-node.png" /></p>
+<h2 id="execution-history">Execution History<a class="headerlink" href="#execution-history" title="Permanent link">&para;</a></h2>
+<p>The workflow runs on a recurring schedule and maintains execution history so failures, long runtimes, and repeated successful checks can be reviewed.</p>
+<p><img alt="n8n execution history" src="../../assets/images/projects/n8n-discord/execution-history.png" /></p>
+<h2 id="discord-alert-output">Discord Alert Output<a class="headerlink" href="#discord-alert-output" title="Permanent link">&para;</a></h2>
+<p>Discord is used as the human-readable output layer. This makes the workflow useful without needing to log directly into n8n every time a check runs.</p>
+<p><img alt="Discord public exposure alert" src="../../assets/images/projects/n8n-discord/discord-alert.png" /></p>
+<h2 id="what-this-demonstrates">What This Demonstrates<a class="headerlink" href="#what-this-demonstrates" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Scheduled automation workflows</li>
+<li>API and service integration</li>
+<li>JavaScript-based data normalization</li>
+<li>Discord-based operational reporting</li>
+<li>Baseline comparison logic</li>
+<li>Public exposure review</li>
+<li>Home lab monitoring discipline</li>
+<li>Clear technical documentation</li>
+</ul>
 <h2 id="outcome">Outcome<a class="headerlink" href="#outcome" title="Permanent link">&para;</a></h2>
-<p>This project shows practical automation skills: turning repeated checks into reliable workflows with readable outputs.</p>
+<p>The workflow creates a repeatable network operations check that runs without manual effort and sends useful results to Discord. It also turns scattered home lab data into a structured report that can be reviewed quickly.</p>
 <h2 id="lessons-learned">Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Good alerts need filtering.</li>
-<li>Separate channels keep noise under control.</li>
-<li>Normalizing messy data is usually the hardest part.</li>
-<li>A workflow is only useful if it reduces human checking.</li>
+<li>Useful automation needs clean output, not just successful execution.</li>
+<li>Alerts should be separated by purpose so they do not become noise.</li>
+<li>Public exposure checks need baselines, otherwise every run looks important.</li>
+<li>Discord works well as a lightweight operations notification layer.</li>
+<li>A visual workflow is easier to explain when each branch has a clear job.</li>
 </ul>
 
 

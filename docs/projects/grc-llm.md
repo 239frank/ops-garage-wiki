@@ -1,54 +1,89 @@
 ﻿# GRC LLM
 
-## Purpose
+## Summary
 
-A local compliance assistant focused on control interpretation, evidence organization, and assessment support.
+The GRC LLM project explores how a local AI assistant can support compliance workflows such as control review, evidence organization, SAR review, POA&M support, and RMF/ATO documentation.
+
+The emphasis is on workflow support, not replacing human judgment. The system is designed to help organize information, summarize control language, and assist with compliance-focused analysis.
 
 ## Problem
 
-GRC and RMF work often requires reviewing large volumes of policy, evidence, control language, assessment procedures, SAR notes, and POA&M data. A local assistant can help organize and reason through that material while keeping the workflow controlled.
+GRC and RMF work often involves large amounts of documentation:
+
+- Control language
+- Assessment procedures
+- System descriptions
+- Evidence files
+- SAR notes
+- POA&M entries
+- Risk decisions
+- Authorization package material
+
+That information can be difficult to search, summarize, and compare manually. A local assistant can help speed up review and organization when the source material is controlled and the output is checked by a human.
 
 ## Approach
 
-The lab explores how a local LLM can support:
+The lab focuses on a local workflow where compliance material can be uploaded, searched, summarized, and reviewed.
 
-- Control interpretation
-- Evidence mapping
-- SAR review
-- POA&M support
-- NIST SP 800-53 notes
-- RMF and ATO package review
-- Compliance-focused question answering
+Core use cases include:
 
-## Tools Used
+1. Reviewing control language.
+2. Mapping evidence to control requirements.
+3. Summarizing SAR or assessment notes.
+4. Organizing POA&M-related information.
+5. Asking compliance-focused questions against uploaded reference material.
+6. Drafting plain-language summaries for review.
 
-- Local LLM stack
+## Tools and Concepts
+
+- Local LLM environment
 - Open WebUI
-- Unraid Docker environment
-- RTX GPU acceleration
-- Markdown control packets
-- GRC / RMF reference material
+- Docker / Unraid deployment
+- GPU-assisted local processing
+- Markdown-based control packets
+- RMF / ATO workflow concepts
+- NIST SP 800-53 study
+- Evidence organization
+- Source-grounded review
 
-## Screenshots
+## What This Demonstrates
 
-Save screenshots here later:
-
-```text
-docs/assets/images/projects/grc-llm/
-```
-
-Example Markdown once screenshots are added:
-
-```md
-![GRC LLM interface](../assets/images/projects/grc-llm/open-webui.png)
-```
+- GRC workflow understanding
+- Local AI experimentation
+- Compliance documentation awareness
+- Control interpretation
+- Evidence mapping concepts
+- Practical AI use with human review
+- Ability to connect emerging technology to real governance workflows
 
 ## Outcome
 
-This project demonstrates practical use of local AI for compliance support, control review, and knowledge management.
+This project demonstrates a practical approach to using local AI as a compliance support tool. The value is in organizing information, speeding up review, and helping create better summaries while keeping human judgment in the loop.
 
-## Lessons Learned
+## Screenshot Opportunities
 
-- Source quality matters more than model size.
-- Compliance answers need traceability.
-- Local AI is useful for drafting, organizing, and reviewing, but final judgment still needs human review.
+| Screenshot | What It Proves |
+|---|---|
+| Open WebUI interface | Shows local AI environment |
+| Uploaded source/document view | Shows source-based workflow |
+| Example control question | Shows compliance-focused use case |
+| Example response | Shows review and summarization capability |
+| Container/deployment view | Shows self-hosted implementation |
+
+## Screenshot Folder
+
+Save screenshots here:
+
+`docs/assets/images/projects/grc-llm/`
+
+Recommended filenames:
+
+- `open-webui.png`
+- `source-documents.png`
+- `control-question.png`
+- `example-response.png`
+- `deployment-view.png`
+
+## Public Safety Notes
+
+Use generic sample controls and non-sensitive documents for public screenshots. Do not show private system names, internal packages, official documents, usernames, keys, tokens, or sensitive environment details.

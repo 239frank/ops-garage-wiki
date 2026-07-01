@@ -1,30 +1,30 @@
 ﻿# Unraid Server
 
-My Unraid server is the backbone of my home lab and self-hosted tooling environment.
+## Summary
 
-## Current Uses
+The Unraid server is the backbone of my home lab. It hosts containers, lab services, automation tools, monitoring components, and development projects.
 
-- Docker containers
-- Lab applications
-- Automation workflows
-- Monitoring tools
-- Development projects
-- Security experiments
+## Operational Role
 
-## Documentation Goals
-
-| Item | Why It Matters |
+| Area | Purpose |
 |---|---|
-| Container list | Makes rebuilds easier |
-| Port map | Prevents conflicts |
-| Appdata paths | Helps with backups |
-| GPU usage | Documents acceleration workloads |
-| Troubleshooting notes | Prevents relearning the same fixes |
+| Docker hosting | Runs self-hosted applications and lab services |
+| App data | Stores persistent container data |
+| Development projects | Hosts web apps, prototypes, and tools |
+| Automation | Supports n8n and related workflow services |
+| Monitoring | Supports dashboards, logs, and status checks |
+| Local AI / processing | Supports GPU-assisted experiments where practical |
 
-## Screenshot Folder
+## Server Dashboard
 
-Save screenshots here later:
+![Unraid dashboard](../assets/images/projects/homelab/unraid-dashboard.png)
 
-```text
-docs/assets/images/projects/homelab/
-```
+## What This Demonstrates
+
+- Server ownership
+- Container management
+- Storage and appdata awareness
+- Port and service tracking
+- Troubleshooting discipline
+- Rebuild planning
+- Practical infrastructure operations

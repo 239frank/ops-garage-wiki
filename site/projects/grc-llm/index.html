@@ -691,10 +691,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Purpose
+        Summary
       
     </span>
   </a>
@@ -724,10 +724,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tools-used" class="md-nav__link">
+  <a href="#tools-and-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools Used
+        Tools and Concepts
       
     </span>
   </a>
@@ -735,10 +735,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
+  <a href="#what-this-demonstrates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Screenshots
+        What This Demonstrates
       
     </span>
   </a>
@@ -757,10 +757,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
+  <a href="#screenshot-opportunities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lessons Learned
+        Screenshot Opportunities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshot-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshot Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-safety-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Safety Notes
       
     </span>
   </a>
@@ -1869,7 +1891,7 @@
   <span class="md-ellipsis">
     
   
-    Resume Work
+    Resume Details
   
 
     
@@ -1973,10 +1995,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Purpose
+        Summary
       
     </span>
   </a>
@@ -2006,10 +2028,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tools-used" class="md-nav__link">
+  <a href="#tools-and-concepts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools Used
+        Tools and Concepts
       
     </span>
   </a>
@@ -2017,10 +2039,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
+  <a href="#what-this-demonstrates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Screenshots
+        What This Demonstrates
       
     </span>
   </a>
@@ -2039,10 +2061,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lessons-learned" class="md-nav__link">
+  <a href="#screenshot-opportunities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lessons Learned
+        Screenshot Opportunities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshot-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshot Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-safety-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Safety Notes
       
     </span>
   </a>
@@ -2067,45 +2111,101 @@
 
 
 <h1 id="grc-llm">GRC LLM<a class="headerlink" href="#grc-llm" title="Permanent link">&para;</a></h1>
-<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>A local compliance assistant focused on control interpretation, evidence organization, and assessment support.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>The GRC LLM project explores how a local AI assistant can support compliance workflows such as control review, evidence organization, SAR review, POA&amp;M support, and RMF/ATO documentation.</p>
+<p>The emphasis is on workflow support, not replacing human judgment. The system is designed to help organize information, summarize control language, and assist with compliance-focused analysis.</p>
 <h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
-<p>GRC and RMF work often requires reviewing large volumes of policy, evidence, control language, assessment procedures, SAR notes, and POA&amp;M data. A local assistant can help organize and reason through that material while keeping the workflow controlled.</p>
+<p>GRC and RMF work often involves large amounts of documentation:</p>
+<ul>
+<li>Control language</li>
+<li>Assessment procedures</li>
+<li>System descriptions</li>
+<li>Evidence files</li>
+<li>SAR notes</li>
+<li>POA&amp;M entries</li>
+<li>Risk decisions</li>
+<li>Authorization package material</li>
+</ul>
+<p>That information can be difficult to search, summarize, and compare manually. A local assistant can help speed up review and organization when the source material is controlled and the output is checked by a human.</p>
 <h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
-<p>The lab explores how a local LLM can support:</p>
+<p>The lab focuses on a local workflow where compliance material can be uploaded, searched, summarized, and reviewed.</p>
+<p>Core use cases include:</p>
+<ol>
+<li>Reviewing control language.</li>
+<li>Mapping evidence to control requirements.</li>
+<li>Summarizing SAR or assessment notes.</li>
+<li>Organizing POA&amp;M-related information.</li>
+<li>Asking compliance-focused questions against uploaded reference material.</li>
+<li>Drafting plain-language summaries for review.</li>
+</ol>
+<h2 id="tools-and-concepts">Tools and Concepts<a class="headerlink" href="#tools-and-concepts" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Control interpretation</li>
-<li>Evidence mapping</li>
-<li>SAR review</li>
-<li>POA&amp;M support</li>
-<li>NIST SP 800-53 notes</li>
-<li>RMF and ATO package review</li>
-<li>Compliance-focused question answering</li>
-</ul>
-<h2 id="tools-used">Tools Used<a class="headerlink" href="#tools-used" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Local LLM stack</li>
+<li>Local LLM environment</li>
 <li>Open WebUI</li>
-<li>Unraid Docker environment</li>
-<li>RTX GPU acceleration</li>
-<li>Markdown control packets</li>
-<li>GRC / RMF reference material</li>
+<li>Docker / Unraid deployment</li>
+<li>GPU-assisted local processing</li>
+<li>Markdown-based control packets</li>
+<li>RMF / ATO workflow concepts</li>
+<li>NIST SP 800-53 study</li>
+<li>Evidence organization</li>
+<li>Source-grounded review</li>
 </ul>
-<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h2>
-<p>Save screenshots here later:</p>
-<pre><code class="language-text">docs/assets/images/projects/grc-llm/
-</code></pre>
-<p>Example Markdown once screenshots are added:</p>
-<pre><code class="language-md">![GRC LLM interface](../assets/images/projects/grc-llm/open-webui.png)
-</code></pre>
-<h2 id="outcome">Outcome<a class="headerlink" href="#outcome" title="Permanent link">&para;</a></h2>
-<p>This project demonstrates practical use of local AI for compliance support, control review, and knowledge management.</p>
-<h2 id="lessons-learned">Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permanent link">&para;</a></h2>
+<h2 id="what-this-demonstrates">What This Demonstrates<a class="headerlink" href="#what-this-demonstrates" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Source quality matters more than model size.</li>
-<li>Compliance answers need traceability.</li>
-<li>Local AI is useful for drafting, organizing, and reviewing, but final judgment still needs human review.</li>
+<li>GRC workflow understanding</li>
+<li>Local AI experimentation</li>
+<li>Compliance documentation awareness</li>
+<li>Control interpretation</li>
+<li>Evidence mapping concepts</li>
+<li>Practical AI use with human review</li>
+<li>Ability to connect emerging technology to real governance workflows</li>
 </ul>
+<h2 id="outcome">Outcome<a class="headerlink" href="#outcome" title="Permanent link">&para;</a></h2>
+<p>This project demonstrates a practical approach to using local AI as a compliance support tool. The value is in organizing information, speeding up review, and helping create better summaries while keeping human judgment in the loop.</p>
+<h2 id="screenshot-opportunities">Screenshot Opportunities<a class="headerlink" href="#screenshot-opportunities" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Screenshot</th>
+<th>What It Proves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open WebUI interface</td>
+<td>Shows local AI environment</td>
+</tr>
+<tr>
+<td>Uploaded source/document view</td>
+<td>Shows source-based workflow</td>
+</tr>
+<tr>
+<td>Example control question</td>
+<td>Shows compliance-focused use case</td>
+</tr>
+<tr>
+<td>Example response</td>
+<td>Shows review and summarization capability</td>
+</tr>
+<tr>
+<td>Container/deployment view</td>
+<td>Shows self-hosted implementation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="screenshot-folder">Screenshot Folder<a class="headerlink" href="#screenshot-folder" title="Permanent link">&para;</a></h2>
+<p>Save screenshots here:</p>
+<p><code>docs/assets/images/projects/grc-llm/</code></p>
+<p>Recommended filenames:</p>
+<ul>
+<li><code>open-webui.png</code></li>
+<li><code>source-documents.png</code></li>
+<li><code>control-question.png</code></li>
+<li><code>example-response.png</code></li>
+<li><code>deployment-view.png</code></li>
+</ul>
+<h2 id="public-safety-notes">Public Safety Notes<a class="headerlink" href="#public-safety-notes" title="Permanent link">&para;</a></h2>
+<p>Use generic sample controls and non-sensitive documents for public screenshots. Do not show private system names, internal packages, official documents, usernames, keys, tokens, or sensitive environment details.</p>
 
 
 
