@@ -4,7 +4,7 @@
 
 Public Exposure Watch is an n8n workflow branch that checks DNS records, reverse proxy hosts, and Docker-published ports to identify potentially risky public-facing exposure in a home lab environment.
 
-The goal is not to replace a full vulnerability management platform. The goal is to catch obvious changes and reduce the chance of forgetting about something that became publicly reachable.
+The goal is to catch obvious changes, make exposure review repeatable, and reduce the chance of forgetting about a service that became publicly reachable.
 
 ## Problem
 
@@ -29,7 +29,7 @@ The workflow builds a simple exposure review process:
 5. Compare the current run against a stored baseline.
 6. Classify findings.
 7. Send a Discord report.
-8. Write metrics for later dashboarding.
+8. Write metrics for dashboarding.
 
 ## Screenshots
 
@@ -68,4 +68,4 @@ The workflow provides recurring visibility into public-facing exposure and makes
 
 ## Public Safety Note
 
-Screenshots on this page should be sanitized before publishing. Public IPs, private IPs, internal service names, webhook URLs, and media-related services should be blurred or removed.
+Screenshots on this page are sanitized before publishing. Public IPs, private IPs, internal service names, webhook URLs, and media-related services should not be visible on a public portfolio site.

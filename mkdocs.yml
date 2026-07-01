@@ -70,6 +70,6 @@ nav:
   - Career:
       - Overview: career/index.md
       - Portfolio: career/portfolio.md
-      - Resume Work: career/resume-work.md
+      - Resume Details: career/resume-work.md
       - Transition Notes: career/transition-notes.md
       - Leadership Notes: career/leadership.md

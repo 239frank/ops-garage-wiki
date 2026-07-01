@@ -16,7 +16,7 @@ A growing home lab creates a lot of things to check manually:
 - Are containers publishing ports that need review?
 - Can useful status reports be delivered without logging into every tool?
 
-Manual checks work for a small setup, but they do not scale well. The goal was to create a lightweight automation pipeline that checks the environment on a schedule and sends readable outputs to the right Discord channels.
+Manual checks work for a small setup, but they do not scale well. This workflow creates a lightweight automation pipeline that checks the environment on a schedule and sends readable outputs to the right Discord channels.
 
 ## Approach
 
@@ -42,7 +42,7 @@ At a high level, the workflow:
 - Reverse proxy data
 - Docker/container data
 - Unraid home lab environment
-- InfluxDB/Grafana-style metric workflow concepts
+- Metrics output for dashboarding
 
 ## Workflow Overview
 
@@ -70,19 +70,18 @@ Discord is used as the human-readable output layer. This makes the workflow usef
 
 ## What This Demonstrates
 
-This project demonstrates practical automation and operations skills:
-
-- Building scheduled automation workflows
-- Integrating multiple tools and data sources
-- Normalizing messy data with JavaScript
-- Sending readable operational alerts
-- Tracking changes against a baseline
-- Turning home lab data into useful notifications
-- Designing alerts that reduce manual checking
+- Scheduled automation workflows
+- API and service integration
+- JavaScript-based data normalization
+- Discord-based operational reporting
+- Baseline comparison logic
+- Public exposure review
+- Home lab monitoring discipline
+- Clear technical documentation
 
 ## Outcome
 
-The workflow creates a repeatable network operations check that can run without manual effort and send useful results to Discord. It also creates a foundation for future dashboarding, exposure review, and home lab monitoring.
+The workflow creates a repeatable network operations check that runs without manual effort and sends useful results to Discord. It also turns scattered home lab data into a structured report that can be reviewed quickly.
 
 ## Lessons Learned
 
@@ -91,11 +90,3 @@ The workflow creates a repeatable network operations check that can run without 
 - Public exposure checks need baselines, otherwise every run looks important.
 - Discord works well as a lightweight operations notification layer.
 - A visual workflow is easier to explain when each branch has a clear job.
-
-## Future Improvements
-
-- Add cleaner severity scoring.
-- Add separate alert channels for high, medium, and informational findings.
-- Add dashboard views for trend data.
-- Add automatic screenshot-safe reporting output.
-- Add a public-safe architecture diagram.
