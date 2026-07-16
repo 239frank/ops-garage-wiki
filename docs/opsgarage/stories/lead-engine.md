@@ -1,22 +1,22 @@
-# Story: From Signal to a Real Conversation
+# Story: From Signal to an Actionable Brief
 
-Most local operators do not need another dashboard. They need fewer missed opportunities, clearer follow-up, and a plain-English view of where time and money leak out of the day.
+Most teams do not need another dashboard. They need clearer handoffs, more dependable follow-through, and a plain-English view of the work in front of them.
 
-The OpsGarageAI lead engine is built around that reality. A potential client arrives through a call or intake form. The system captures what was said, sorts the useful details, estimates possible operational value, and prepares a human-reviewed next step.
+This workflow is built around that reality. A request arrives through a call or intake form. The system captures what was said, sorts the useful details, and prepares a human-reviewed next step.
 
 ## The Point Is Not the AI Voice
 
-The voice assistant is useful because it gives people a low-friction way to begin. The meaningful part happens afterward: the transcript becomes structured context, the context becomes a concrete operational hypothesis, and the hypothesis becomes a conversation an operator can stand behind.
+Capture tools are useful because they give people a low-friction way to begin. The meaningful part happens afterward: raw input becomes structured context, the context becomes a concrete operational hypothesis, and the hypothesis becomes a brief a responsible owner can stand behind.
 
 ## The Deliverable
 
-The intended result is an AI Ops Audit and Automation Sprint for local-service and real-estate operators:
+The intended result is a clear, governed workflow:
 
 | Stage | Outcome |
 |---|---|
-| Audit | A clear map of time leaks, missed handoffs, and repeatable work |
-| Recommendation | A small, prioritized automation plan tied to the business process |
-| Sprint | A focused implementation with documented approval points |
-| Handoff | The owner sees what changed, what to watch, and what stays under their control |
+| Intake | A clear record of the request, context, and dependencies |
+| Analysis | A concise, prioritized readout of repeatable work and friction points |
+| Review | A focused recommendation with documented approval points |
+| Handoff | The owner sees what changed, what to watch, and what remains under their control |
 
 The system makes preparation faster. It does not replace professional judgment or promise outcomes before the facts are known.

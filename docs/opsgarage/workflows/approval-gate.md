@@ -1,6 +1,6 @@
 # Workflow: Approval Gate
 
-Christian / Hermes acts as an operating partner, not an unattended autopilot. It can do the work that makes a decision easier; it stops before the decision becomes an outside-world action.
+An approval gate makes decisions easier without turning automation into an unattended autopilot. It can do preparatory work; it stops before the decision becomes an outside-world action.
 
 ``` mermaid
 flowchart TD
@@ -18,18 +18,18 @@ flowchart TD
 ## Decisions That Always Pause
 
 - Sending an email, DM, or public post
-- Contacting a prospect, customer, or partner
+- Contacting an external stakeholder
 - Spending money or making a purchase
 - Installing software or changing a live environment
 - Exposing a local control surface to the internet
-- Publishing a report or client-facing document
+- Publishing a report or stakeholder-facing document
 
 ## What the Approval Card Should Answer
 
 | Question | Example |
 |---|---|
-| What is the action? | Send a follow-up email to a qualified lead |
-| Why now? | They completed intake and asked about scheduling |
-| What will happen? | A draft with the ROI summary and Calendly link will be sent |
-| What could go wrong? | Incorrect assumptions or an overly aggressive promise |
+| What is the action? | Send a reviewed project update |
+| Why now? | The relevant information has been gathered and checked |
+| What will happen? | A concise summary and the appropriate next steps will be sent |
+| What could go wrong? | Incorrect assumptions or an incomplete recommendation |
 | What is needed from the operator? | Approve, reject, or request edits |

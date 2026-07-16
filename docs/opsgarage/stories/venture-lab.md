@@ -1,17 +1,17 @@
-# Story: A Venture Lab for Practical Demand
+# Story: Iterative Problem Framing
 
-Not every good-looking idea deserves a full build. The venture lab exists to test whether a focused offer solves a real enough problem to become a business.
+Not every good-looking idea deserves a full build. Good systems work starts by testing whether a focused approach solves a meaningful problem.
 
-## Slidell Plumbing Buildout
+## A Grounded Experiment
 
-The Slidell Plumbing property is a neutral local lead-generation experiment. Its job is to attract high-intent local plumbing searches, measure genuine calls, and prove demand before offering a lead flow to a single qualified operator.
+This work explored how to evaluate an operational idea without overstating what the system could do or making claims it could not support.
 
 The rules matter as much as the test:
 
-- No fake identity, address, license, reviews, or business-profile claims.
-- No "24/7," "licensed," or "emergency" promises until a real partner can support them.
-- No scale-up before the demand and partner capacity are both real.
+- No invented identity, address, credentials, reviews, or public claims.
+- No promises that depend on capabilities the system cannot support.
+- No scale-up before the facts, constraints, and capacity are understood.
 
 ## The Broader Pattern
 
-The same standard applies across new ideas: choose a narrow wedge, collect live evidence, make a credible offer, test the response, and document the learning. The goal is a business with traction, not a folder full of hypotheticals.
+The same standard applies across systems work: choose a narrow scope, collect evidence, test the response, and document the learning. The goal is a useful, maintainable result rather than a folder full of hypotheticals.

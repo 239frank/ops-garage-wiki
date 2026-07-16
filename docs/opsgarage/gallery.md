@@ -27,4 +27,4 @@ The working systems are not just diagrams. These sanitized screenshots show the 
 </figure>
 
 !!! note "Sanitized for public viewing"
-    Public visuals omit credentials, private addresses, sensitive client material, and other information that belongs behind the operating boundary.
+    Public visuals omit credentials, private addresses, sensitive material, and other information that belongs behind the operating boundary.
