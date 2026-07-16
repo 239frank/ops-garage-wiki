@@ -1,5 +1,5 @@
 site_name: OpsGarageAI
-site_description: An operating notebook for approval-gated AI systems, automation, compliance workflows, and local venture builds.
+site_description: A professional portfolio documenting systems design, workflow governance, and compliance-aware automation practice.
 site_url: https://opsgarageai.com
 
 theme:
@@ -18,10 +18,6 @@ theme:
 
 extra_css:
   - styles/ops-garage.css
-
-extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-  - javascripts/mermaid.js
 
 plugins:
   - search
@@ -45,14 +41,11 @@ nav:
       - Overview: opsgarage/index.md
       - Operating Principles: opsgarage/principles.md
       - Workflow Library:
-          - Lead Engine: opsgarage/workflows/lead-engine.md
-          - Approval Gate: opsgarage/workflows/approval-gate.md
-          - Margo Content Loop: opsgarage/workflows/margo-content-loop.md
+          - Approval Design: opsgarage/workflows/approval-gate.md
+          - Content Review: opsgarage/workflows/margo-content-loop.md
       - Build Stories:
-          - The Lead Engine: opsgarage/stories/lead-engine.md
-          - Compliance Copilots: opsgarage/stories/compliance-copilots.md
-          - Venture Lab: opsgarage/stories/venture-lab.md
-      - Visual Stack Map: opsgarage/stack-map.md
+          - Workflow Design: opsgarage/stories/lead-engine.md
+          - Compliance Evidence Practice: opsgarage/stories/compliance-copilots.md
       - Build Gallery: opsgarage/gallery.md
   - Archive:
       - Original Portfolio Home: index.md
