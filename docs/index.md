@@ -1,34 +1,45 @@
-﻿# The Ops Garage
+# Systems and Operations Portfolio
 
-Welcome to **The Ops Garage** — my public technical portfolio for cybersecurity operations, IT infrastructure, automation, GRC, and home lab engineering.
+<div class="og-intro">
+  <div>
+    <p class="og-lede">OpsGarageAI documents practical systems design: making complex work easier to see, easier to govern, and easier to improve.</p>
+    <p>This portfolio captures the engineering patterns, workflow controls, and technical operations practices behind the projects.</p>
+  </div>
+  <figure>
+    <img src="assets/images/people/frank-suit-portrait.png" alt="Frank in a black suit and tie, wearing service medals." loading="lazy" />
+  </figure>
+</div>
 
-This site documents practical systems I have built, tested, automated, and improved. It is designed to show how I approach technical problems: identify the need, build a workable solution, document the process, and keep improving the workflow.
+## The Work
 
-## What This Site Shows
+| Area | What it is for | How it stays accountable |
+|---|---|---|
+| Workflow governance | Turns incoming work into a clear brief, draft, or next action | External communication, spend, and production changes require review |
+| Automation engineering | Connects structured inputs, analysis, and repeatable internal tasks | Processes remain inspectable and interruptible |
+| Compliance practice | Organizes evidence, decisions, and meeting-ready material | Findings stay traceable and reviewable |
+| Technical operations | Documents self-hosted infrastructure, monitoring, and automation | Changes remain visible and reversible |
 
-| Area | What It Demonstrates |
-|---|---|
-| Cybersecurity | Security monitoring, exposure review, incident response workflows, and practical risk awareness |
-| IT Operations | Infrastructure management, troubleshooting, service visibility, and operational coordination |
-| Automation | n8n workflows, Discord alerts, scheduled checks, and repeatable reporting |
-| GRC | Compliance workflow design, control review, evidence organization, and RMF/CMMC study |
-| Home Lab | Self-hosted infrastructure, Docker, Unraid, monitoring, networking, and technical experimentation |
-| Documentation | Clear project writeups, lessons learned, technical notes, and portfolio-quality communication |
+## The Standard
 
-## Featured Work
+The automation can do the repetitive work. The person responsible for the business keeps the judgment.
 
-| Project | Focus |
-|---|---|
-| [n8n + Discord Automation](projects/n8n-discord-automation.md) | Workflow automation, reporting, and operational alerting |
-| [Public Exposure Watch](projects/public-exposure-watch.md) | DNS, reverse proxy, and Docker exposure review |
-| [Home Lab Operations](projects/home-lab-ops.md) | Infrastructure operations, containers, monitoring, and troubleshooting |
-| [GRC LLM](projects/grc-llm.md) | Compliance workflow support and local AI experimentation |
-| [Incident Response Tracker](projects/ir-tracker.md) | SOC-style incident tracking and technician workflow design |
-| [Security Onion Lab](projects/security-onion-lab.md) | Security monitoring, visibility, and alert review |
-| [Career Profile](career/index.md) | Resume positioning, target roles, and professional strengths |
+That means every system here follows the same operating discipline:
 
-## Professional Focus
+1. Capture the signal without losing context.
+2. Prepare useful material for the next decision.
+3. Keep external action behind a human approval.
 
-I am focused on roles where technical operations, cybersecurity, infrastructure, compliance, automation, and leadership intersect.
+<p class="og-status">Current focus: automation, workflow governance, and compliance-aware technical operations.</p>
 
-This portfolio is built to show practical capability, not just list tools.
+## Why It Matters
+
+<figure class="og-family-photo">
+  <img src="assets/images/people/family-graduation.jpg" alt="A family gathered to celebrate a graduation." loading="lazy" />
+  <figcaption>Useful systems should create more room for the people and milestones that matter.</figcaption>
+</figure>
+
+## Explore the Notebook
+
+- [Approval design](opsgarage/workflows/approval-gate.md): the operating rule that keeps automation accountable.
+- [Workflow design](opsgarage/stories/lead-engine.md): turning unstructured information into an actionable brief.
+- [Compliance evidence practice](opsgarage/stories/compliance-copilots.md): patterns for organized, reviewable evidence work.
