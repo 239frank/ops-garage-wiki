@@ -1,0 +1,96 @@
+:root {
+  --md-primary-fg-color: #111827;
+  --md-accent-fg-color: #00a6a6;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b1220;
+  --md-default-fg-color: #e8edf5;
+  --md-code-bg-color: #162033;
+  --md-typeset-a-color: #3dd5c7;
+}
+
+.md-typeset h1 {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+  padding-bottom: 0.35rem;
+}
+
+.md-typeset .og-kicker {
+  color: #3dd5c7;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.md-typeset .og-lede {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 46rem;
+}
+
+.md-typeset .og-map {
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 0.75rem;
+}
+
+.md-typeset .og-status {
+  color: #3dd5c7;
+  font-weight: 700;
+}
+
+.md-typeset .og-personal-grid {
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1fr);
+  margin: 1.25rem 0 2rem;
+}
+
+.md-typeset .og-personal-grid figure,
+.md-typeset .og-family-photo {
+  margin: 0;
+}
+
+.md-typeset .og-personal-grid img {
+  aspect-ratio: 4 / 5;
+  border-radius: 6px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.md-typeset .og-family-photo {
+  margin: 1.25rem 0 2rem;
+  max-width: 760px;
+}
+
+.md-typeset .og-family-photo img {
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+}
+
+.md-typeset .og-family-photo figcaption {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+  margin-top: 0.55rem;
+}
+
+@media screen and (max-width: 600px) {
+  .md-typeset .og-personal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .og-personal-grid figure {
+    max-width: 360px;
+  }
+}

@@ -1,6 +1,6 @@
-﻿site_name: The Ops Garage
-site_description: Cyber operations, home lab builds, automation, GRC, and technical lessons learned from the garage.
-site_url: https://ops.casadegarcia.tv
+site_name: OpsGarageAI
+site_description: An operating notebook for approval-gated AI systems, automation, compliance workflows, and local venture builds.
+site_url: https://opsgarageai.com
 
 theme:
   name: material
@@ -16,6 +16,13 @@ theme:
       primary: black
       accent: blue
 
+extra_css:
+  - styles/ops-garage.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid.js
+
 plugins:
   - search
 
@@ -27,10 +34,28 @@ markdown_extensions:
   - fenced_code
   - attr_list
   - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
-  - Start Here:
-      - Home: index.md
+  - OpsGarageAI:
+      - Overview: opsgarage/index.md
+      - Operating Principles: opsgarage/principles.md
+      - Workflow Library:
+          - Lead Engine: opsgarage/workflows/lead-engine.md
+          - Approval Gate: opsgarage/workflows/approval-gate.md
+          - Margo Content Loop: opsgarage/workflows/margo-content-loop.md
+      - Build Stories:
+          - The Lead Engine: opsgarage/stories/lead-engine.md
+          - Compliance Copilots: opsgarage/stories/compliance-copilots.md
+          - Venture Lab: opsgarage/stories/venture-lab.md
+      - Visual Stack Map: opsgarage/stack-map.md
+      - Build Gallery: opsgarage/gallery.md
+  - Archive:
+      - Original Portfolio Home: index.md
       - About Me: start/about.md
       - Current Focus: start/current-focus.md
   - Portfolio:
