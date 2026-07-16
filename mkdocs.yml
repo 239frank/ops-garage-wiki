@@ -47,9 +47,6 @@ nav:
           - Workflow Design: opsgarage/stories/lead-engine.md
           - Compliance Evidence Practice: opsgarage/stories/compliance-copilots.md
       - Build Gallery: opsgarage/gallery.md
-  - Archive:
-      - About Me: start/about.md
-      - Current Focus: start/current-focus.md
   - Portfolio:
       - Portfolio Home: projects/index.md
       - Incident Response Tracker: projects/ir-tracker.md
