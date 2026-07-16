@@ -45,3 +45,52 @@
   color: #3dd5c7;
   font-weight: 700;
 }
+
+.md-typeset .og-personal-grid {
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1fr);
+  margin: 1.25rem 0 2rem;
+}
+
+.md-typeset .og-personal-grid figure,
+.md-typeset .og-family-photo {
+  margin: 0;
+}
+
+.md-typeset .og-personal-grid img {
+  aspect-ratio: 4 / 5;
+  border-radius: 6px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.md-typeset .og-family-photo {
+  margin: 1.25rem 0 2rem;
+  max-width: 760px;
+}
+
+.md-typeset .og-family-photo img {
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+}
+
+.md-typeset .og-family-photo figcaption {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+  margin-top: 0.55rem;
+}
+
+@media screen and (max-width: 600px) {
+  .md-typeset .og-personal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .og-personal-grid figure {
+    max-width: 360px;
+  }
+}
