@@ -38,7 +38,7 @@ markdown_extensions:
 
 nav:
   - OpsGarageAI:
-      - Overview: opsgarage/index.md
+      - Overview: index.md
       - Operating Principles: opsgarage/principles.md
       - Workflow Library:
           - Approval Design: opsgarage/workflows/approval-gate.md
@@ -48,7 +48,6 @@ nav:
           - Compliance Evidence Practice: opsgarage/stories/compliance-copilots.md
       - Build Gallery: opsgarage/gallery.md
   - Archive:
-      - Original Portfolio Home: index.md
       - About Me: start/about.md
       - Current Focus: start/current-focus.md
   - Portfolio:
